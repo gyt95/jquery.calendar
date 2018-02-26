@@ -1,0 +1,94 @@
+body {
+    margin: 0
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+li {
+    display: inline-block;
+    width: 45px;
+    text-align: center;
+}
+
+
+span {
+    display: inline-block;
+    text-align: center;
+}
+
+button{
+    border:1px solid grey;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 7px;
+    outline: 0;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+.nav {
+    padding: 15px 50px 0;
+}
+
+.mid {
+    padding: 0 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+.prev-btn{
+    float: left;
+}
+.next-btn {
+    float: right;
+}
+
+.calendar {
+    /* border: 1px solid grey; */
+    width: 400px;
+    margin: auto;
+    /* height: 485px; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.week-list {
+    padding: 0 25px;
+}
+
+.date-list li {
+    margin: 2.2px;
+    height: 60px;
+    vertical-align: middle;
+
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.date-list li div{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+.date-list li span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.date-list li, .prev-btn, .next-btn {
+    cursor: pointer;
+}
+
+.date-list li:hover{
+    background:lightgoldenrodyellow
+}
+

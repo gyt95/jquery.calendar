@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a simple canlendar demo</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="title">Calendar</div>
+    <div class="calendar">
+        <div class="nav">
+            <button class="prev-btn">prev</button>
+            <div class="mid">
+                <span class="year"></span>年
+                <span class="month"></span>月
+            </div>
+            <button class="next-btn">next</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="jquery.calendar.oop.js"></script>
+    <script type="text/javascript">
+        $('.calendar').calendar({
+            'borderBottom':'2px solid red'
+        })
+    </script>
+</body>
+
+</html>
