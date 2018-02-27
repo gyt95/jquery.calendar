@@ -10,14 +10,68 @@
 
 > 后续考虑改用vue/react写。
 
-## 功能需求
+## 索引
+* [快速开始](#quick-start)
+* [选项](#options)
+* [说明](#explanation)
 
-- [x] 所有日历基本功能，如：切换月份 -- 完成
-- [x] 增加样式基本定制 -- 完成
-- [ ] 增加记事本功能 -- 未完成
-- [ ] json文件保存或数据库存储 -- 未完成
+## 快速开始
+
+css部分
+
+```
+<link rel="stylesheet" href="./index.css">
+```
+
+html部分
+
+```
+<div class="calendar">
+    <div class="nav">
+        <button class="prev-btn">prev</button>
+        <div class="mid">
+            <span class="year"></span>年
+            <span class="month"></span>月
+        </div>
+        <button class="next-btn">next</button>
+    </div>
+</div>
+```
+
+引入js文件
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="jquery.calendar.oop.js"></script>
+```
+
+调用插件(目前仅能定制点击时样式)
+```
+<script type="text/javascript">
+    $('.calendar').calendar({
+        'borderBottom': '2px solid red'
+    })
+</script>
+```
+
+运行查看效果。
+
+## 选项
+
+您可以在调用插件时通过传递选项来自定义，下面列出了所有可用的选项。
+```
+$('.calendar').calendar({
+    option: value,
+    option2: value2,
+    ...
+})
+```
+
+| Option          | type          | default          | Description                                 |
+|-----------------|---------------|------------------|---------------------------------------------|
+| borderBottom    | string        | `'2px solid lightseagreen'`       |   选中日期时标记的颜色      |
 
 ## 说明
 
-jquery.calendar.origin.js 是最开始的版本  
+jquery.calendar.origin.js 是最开始的版本(目前已删去)  
 jquery.calendar.oop.js 是规范化后的js，正式调用也是用的这个  
